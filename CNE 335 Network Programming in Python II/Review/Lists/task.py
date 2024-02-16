@@ -1,9 +1,9 @@
 def fake_create_initial_network_list():
     # TODO - Create a list and add 3 servers.
-    return ["127.0.0.1", "192.168.0.0", "192.168.0.1"]
+    return
 
 def fake_add_to_network(network_list, server_ip):
-    return network_list.append(server_ip)
+    # TODO - Add server_ip to network_list.
     return
 
 def get_server_at_index(network_list, index):
