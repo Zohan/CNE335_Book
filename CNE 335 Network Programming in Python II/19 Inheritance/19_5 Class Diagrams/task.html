@@ -24,7 +24,7 @@ They will inherit from the User class.</p>
     <p>The NormalUser, PowerUser, and Admin constructors (hint: <code>__init__</code>) are almost the same as the
     User class. You could copy-and-paste much of the User constructor into those Py files to get some tests passing.</p>
     <p><code>add_action</code> should only work for Admins. One way to do this is to check if the user who
-    called add_action (self) has "Admin" in their type string. For example <code>if str(type(self)) == "Admin":</code> </p>
+    called add_action (self) has "Admin" in their type string. For example <code>if "Admin" in str(type(my_admin)):</code> </p>
 </div>
 
 </html>
