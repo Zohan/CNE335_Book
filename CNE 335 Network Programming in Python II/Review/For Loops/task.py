@@ -5,7 +5,7 @@ def fake_create_initial_network_list():
     return
 
 def ip_in_network_list(network_list, ip):
-    # TODO - Return the IP if it's in the network list. Otherwise return "Not Found"
+    # TODO - Return the IP if it's in the network list. Otherwise return "Not found"
     return
 
 # Do not change anything below
