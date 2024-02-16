@@ -21,5 +21,5 @@ class TestCase(unittest.TestCase):
         server = ServerClass()
         random_server = "localhost_" + str(randint(0,254))
         server.server_name = random_server
-        self.assertEquals(random_server, server.server_name)
-        self.assertEquals(random_server, server.get_server_name())
+        self.assertEqual(random_server, server.server_name)
+        self.assertEqual(random_server, server.get_server_name())

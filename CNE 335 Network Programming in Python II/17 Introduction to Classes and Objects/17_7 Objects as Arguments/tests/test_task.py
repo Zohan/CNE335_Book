@@ -11,12 +11,12 @@ class TestCase(unittest.TestCase):
     def test_biggest_ip_sum_zero_and_one(self):
         ip_zero = ServerClass("0.0.0.0")
         ip_one = ServerClass("0.0.0.1")
-        self.assertEquals(biggest_ip_sum(ip_zero, ip_one), 1)
+        self.assertEqual(biggest_ip_sum(ip_zero, ip_one), 1)
 
     def test_biggest_ip_sum_localhost_and_dhcp(self):
         ip_localhost = ServerClass("127.0.0.1")
         ip_dhcp = ServerClass("192.168.0.1")
-        self.assertEquals(biggest_ip_sum(ip_localhost, ip_dhcp), 361)
+        self.assertEqual(biggest_ip_sum(ip_localhost, ip_dhcp), 361)
 
     def test_random_ip(self):
         random_ip_octet = randint(2, 250)
@@ -30,4 +30,4 @@ class TestCase(unittest.TestCase):
             bigger_ip_total += random_ip_octet+2
         ip_base = ServerClass(random_ip)
         ip_bigger = ServerClass(random_bigger_ip)
-        self.assertEquals(biggest_ip_sum(ip_base, ip_bigger), bigger_ip_total)
+        self.assertEqual(biggest_ip_sum(ip_base, ip_bigger), bigger_ip_total)

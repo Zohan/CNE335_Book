@@ -14,6 +14,6 @@ class TestCase(unittest.TestCase):
 
     def test_set_server_name(self):
         server = ServerClass("127.0.0.1", "localhost")
-        self.assertEquals("localhost", server.server_name)
+        self.assertEqual("localhost", server.server_name)
         server.server_name = "random_server"
-        self.assertEquals("random_server", server.server_name)
+        self.assertEqual("random_server", server.server_name)
