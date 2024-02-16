@@ -15,7 +15,6 @@ class TestCase(unittest.TestCase):
     def test_get_server_name(self):
         server = ServerClass()
         self.assertIsNotNone(server.get_server_name())
-        self.assertNotEqual(self, "<class 'method'>", str(type(server.server_name)))
 
     def test_set_server_name(self):
         server = ServerClass()
